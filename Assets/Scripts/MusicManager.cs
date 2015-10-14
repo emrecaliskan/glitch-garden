@@ -29,7 +29,13 @@ public class MusicManager : MonoBehaviour {
 			audioSource.loop = false;
 			audioSource.Play();
 		}
-		
-		
+	}
+	
+	public void changeVolume(float volume){
+		if (volume >= 0f && volume <= 1f){
+			audioSource.volume = volume;
+		} else {
+			Debug.Log ("Volume level out of range");
+		}
 	}
 }
