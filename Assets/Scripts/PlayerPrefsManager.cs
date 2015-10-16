@@ -16,7 +16,7 @@ public class PlayerPrefsManager : MonoBehaviour {
 		}
 	}
 	
-	public static float GetMasterVolumeKey(){
+	public static float GetMasterVolume(){
 		return PlayerPrefs.GetFloat(MASTER_VOLUME_KEY);
 	}
 	
